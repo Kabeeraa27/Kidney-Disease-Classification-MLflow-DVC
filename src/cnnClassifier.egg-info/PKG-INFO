@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small package for CNN app
+Home-page: https://github.com/Kabeeraa27/Kidney-Disease-Classification-MLflow-DVC
+Author: Kabeeraa27
+Author-email: kabeeer27@gmail.com
+Project-URL: Bug Tracker, https://github.com/Kabeeraa27/Kidney-Disease-Classification-MLflow-DVC/issues
+Description-Content-Type: text/markdown
