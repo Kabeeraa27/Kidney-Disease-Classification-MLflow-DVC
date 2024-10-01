@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/kabee/OneDrive/Desktop/DS%20PROJ3/Kidney-Disease-Classification-MLflow-DVC/mlruns/0/54222397f00744e788c6d0dca87c06d0/artifacts
+end_time: 1727812527677
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 54222397f00744e788c6d0dca87c06d0
+run_name: enthused-cat-811
+run_uuid: 54222397f00744e788c6d0dca87c06d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727812507093
+status: 3
+tags: []
+user_id: kabee
