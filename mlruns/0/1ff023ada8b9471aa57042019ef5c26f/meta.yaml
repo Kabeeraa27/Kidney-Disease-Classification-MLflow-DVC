@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/kabee/OneDrive/Desktop/DS%20PROJ3/Kidney-Disease-Classification-MLflow-DVC/mlruns/0/1ff023ada8b9471aa57042019ef5c26f/artifacts
+end_time: 1727813491136
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1ff023ada8b9471aa57042019ef5c26f
+run_name: zealous-hound-505
+run_uuid: 1ff023ada8b9471aa57042019ef5c26f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1727813474301
+status: 3
+tags: []
+user_id: kabee

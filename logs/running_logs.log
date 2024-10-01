@@ -635,3 +635,48 @@ x=========================x
 [2024-10-02 01:25:27,680] INFO: main: >>>>>>>>>> EVALUATION COMPLETED <<<<<<<<<<
 
 x=========================x
+[2024-10-02 01:39:35,910] INFO: main: >>>>>>>>>> DATA INGESTION STAGE STARTED <<<<<<<<<<
+[2024-10-02 01:39:35,912] INFO: common: yaml file: config\config.yaml loaded successfully
+[2024-10-02 01:39:35,916] INFO: common: yaml file: params.yaml loaded successfully
+[2024-10-02 01:39:35,917] INFO: common: created directory at: artifacts
+[2024-10-02 01:39:35,918] INFO: common: created directory at: artifacts/data_ingestion
+[2024-10-02 01:39:35,918] INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/data.zip
+[2024-10-02 01:39:44,170] INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view into file artifacts/data_ingestion/data.zip
+[2024-10-02 01:39:44,837] INFO: main: >>>>>>>>>> DATA INGESTION STAGE COMPLETED <<<<<<<<<<
+
+x=========================x
+[2024-10-02 01:39:44,838] INFO: main: ************************************************
+[2024-10-02 01:39:44,838] INFO: main: >>>>>>>>>> PREPARE BASE MODEL STARTED <<<<<<<<<<
+[2024-10-02 01:39:44,840] INFO: common: yaml file: config\config.yaml loaded successfully
+[2024-10-02 01:39:44,842] INFO: common: yaml file: params.yaml loaded successfully
+[2024-10-02 01:39:44,842] INFO: common: created directory at: artifacts
+[2024-10-02 01:39:44,843] INFO: common: created directory at: artifacts/prepare_base_model
+[2024-10-02 01:39:45,547] WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2024-10-02 01:39:45,967] INFO: main: >>>>>>>>>> PREPARE BASE MODEL COMPLETED <<<<<<<<<<
+
+x=========================x
+[2024-10-02 01:39:45,968] INFO: main: ************************************************
+[2024-10-02 01:39:45,968] INFO: main: >>>>>>>>>> TRAINING STARTED <<<<<<<<<<
+[2024-10-02 01:39:45,970] INFO: common: yaml file: config\config.yaml loaded successfully
+[2024-10-02 01:39:45,971] INFO: common: yaml file: params.yaml loaded successfully
+[2024-10-02 01:39:45,973] INFO: common: created directory at: artifacts
+[2024-10-02 01:39:45,974] INFO: common: created directory at: artifacts\training
+[2024-10-02 01:40:52,905] INFO: main: >>>>>>>>>> TRAINING COMPLETED <<<<<<<<<<
+
+x=========================x
+[2024-10-02 01:40:52,908] INFO: main: ************************************************
+[2024-10-02 01:40:52,908] INFO: main: >>>>>>>>>> EVALUATION STARTED <<<<<<<<<<
+[2024-10-02 01:40:52,915] INFO: common: yaml file: config\config.yaml loaded successfully
+[2024-10-02 01:40:52,920] INFO: common: yaml file: params.yaml loaded successfully
+[2024-10-02 01:40:52,925] INFO: common: created directory at: artifacts
+[2024-10-02 01:41:13,933] INFO: common: json file saved at: scores.json
+[2024-10-02 01:41:13,935] INFO: common: json file saved at: scores.json
+[2024-10-02 01:41:16,314] WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.
+[2024-10-02 01:41:16,914] INFO: builder_impl: Assets written to: C:\Users\kabee\AppData\Local\Temp\tmprnvdtqmx\model\data\model\assets
+[2024-10-02 01:41:30,970] INFO: dir_util: creating C:\Users\kabee\OneDrive\Desktop\DS PROJ3\Kidney-Disease-Classification-MLflow-DVC\mlruns\0\1ff023ada8b9471aa57042019ef5c26f\artifacts\model\data
+[2024-10-02 01:41:30,974] INFO: dir_util: creating C:\Users\kabee\OneDrive\Desktop\DS PROJ3\Kidney-Disease-Classification-MLflow-DVC\mlruns\0\1ff023ada8b9471aa57042019ef5c26f\artifacts\model\data\model
+[2024-10-02 01:41:30,975] INFO: dir_util: creating C:\Users\kabee\OneDrive\Desktop\DS PROJ3\Kidney-Disease-Classification-MLflow-DVC\mlruns\0\1ff023ada8b9471aa57042019ef5c26f\artifacts\model\data\model\assets
+[2024-10-02 01:41:30,980] INFO: dir_util: creating C:\Users\kabee\OneDrive\Desktop\DS PROJ3\Kidney-Disease-Classification-MLflow-DVC\mlruns\0\1ff023ada8b9471aa57042019ef5c26f\artifacts\model\data\model\variables
+[2024-10-02 01:41:31,139] INFO: main: >>>>>>>>>> EVALUATION COMPLETED <<<<<<<<<<
+
+x=========================x
