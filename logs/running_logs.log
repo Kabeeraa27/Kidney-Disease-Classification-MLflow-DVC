@@ -940,3 +940,15 @@ OSError: No file or directory found at training\model.h5
 [2024-10-07 16:43:05,079] INFO: _internal: [33mPress CTRL+C to quit[0m
 [2024-10-07 16:43:05,214] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:43:05] "GET / HTTP/1.1" 200 -
 [2024-10-07 16:43:10,677] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:43:10] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:50:08,123] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:50:08,124] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:50:10,476] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:50:10] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:50:15,498] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:50:15] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:50:20,251] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:50:20] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:50:26,095] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:50:26] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:50:31,388] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:50:31] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:50:35,576] WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x0000021901B44670> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.
+[2024-10-07 16:50:35,581] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:50:35] "POST /predict HTTP/1.1" 200 -
