@@ -815,3 +815,128 @@ x=========================x
 [2024-10-07 16:06:22,269] INFO: stage_04_model_evaluation: >>>>>>>>>> EVALUATION COMPLETED <<<<<<<<<<
 
 x=========================x
+[2024-10-07 16:15:44,916] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:15:44,917] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:15:56,235] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:15:56] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:16:45,288] ERROR: app: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 41, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\kabee\onedrive\desktop\ds proj3\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-10-07 16:16:45,301] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:16:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-10-07 16:17:18,768] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:17:18] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:17:36,242] ERROR: app: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 41, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\kabee\onedrive\desktop\ds proj3\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-10-07 16:17:36,248] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:17:36] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-10-07 16:19:55,736] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:19:55,736] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:19:59,436] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:19:59] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:20:06,102] ERROR: app: Exception on /predict [POST]
+Traceback (most recent call last):
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 41, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\kabee\onedrive\desktop\ds proj3\kidney-disease-classification-mlflow-dvc\src\cnnClassifier\pipeline\prediction.py", line 15, in predict
+    model = load_model(os.path.join("training", "model.h5"))
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\kabee\anaconda3\envs\kidney\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at training\model.h5
+[2024-10-07 16:20:06,114] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:20:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[2024-10-07 16:21:26,448] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:21:26,449] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:21:32,923] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:21:32] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:21:37,781] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:21:37] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:22:00,762] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:22:00] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:25:03,326] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:25:03,326] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:25:04,877] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:25:04] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:37:28,018] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:37:28] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:37:35,481] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:37:35] "POST /predict HTTP/1.1" 200 -
+[2024-10-07 16:42:07,169] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:42:07,170] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:42:07,257] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:42:07] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:42:08,514] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:42:08] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:42:14,259] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:42:14] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -
+[2024-10-07 16:42:17,545] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:42:17] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -
+[2024-10-07 16:42:22,057] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:42:22] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -
+[2024-10-07 16:42:23,282] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:42:23] "[31m[1mPOST /predict HTTP/1.1[0m" 415 -
+[2024-10-07 16:43:05,078] INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://10.168.34.156:8080
+[2024-10-07 16:43:05,079] INFO: _internal: [33mPress CTRL+C to quit[0m
+[2024-10-07 16:43:05,214] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:43:05] "GET / HTTP/1.1" 200 -
+[2024-10-07 16:43:10,677] INFO: _internal: 127.0.0.1 - - [07/Oct/2024 16:43:10] "POST /predict HTTP/1.1" 200 -
